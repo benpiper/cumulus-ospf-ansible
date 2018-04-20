@@ -1,0 +1,31 @@
+switchvars:
+
+  spine01:
+    rid: 192.168.0.21
+    prefix: 192.168.0.0/16
+    area: 0
+    
+  spine02:
+    rid: 192.168.0.22
+    prefix: 192.168.0.0/16
+    area: 0
+
+  leaf01:
+    rid: 192.168.0.11
+    prefix: 192.168.0.0/16
+    area: 0
+
+  leaf02:
+    rid: 192.168.0.12
+    prefix: 192.168.0.0/16
+    area: 0
+    
+  leaf03:
+    rid: 192.168.0.13
+    prefix: 192.168.0.0/16
+    area: 0
+    
+  leaf04:
+    rid: 192.168.0.14
+    prefix: 192.168.0.0/16
+    area: 0
