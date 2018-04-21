@@ -1,8 +1,16 @@
 ---
-- name: Enable OSPF
+- name: Set OSPF RID
   nclu:
     commands:
     - add ospf router-id {{ rid }}
-    - add ospf network {{ prefix }} area {{ area }}
+    atomic: true
+    description: "Set OSPF RID"
+
+- name: Enable OSPF
+  nclu:
+    commands:
+    - add ospf network {{ item.prefix }} area {{ item.area }}
     atomic: true
     description: "Enable OSPF"
+    loop:
+      - { prefix: 192.168.0.0/16, area: 0.0.0.0 }
