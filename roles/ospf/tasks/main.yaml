@@ -6,5 +6,3 @@
     - add ospf network {{ prefix }} area {{ area }}
     atomic: true
     description: "Enable OSPF"
-
-...
