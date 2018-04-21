@@ -1,14 +1,8 @@
 ---
-- name: Set OSPF RID
-  nclu:
-    commands:
-    - add ospf router-id {{ rid }}
-    atomic: true
-    description: "Set OSPF RID"
-
 - name: Enable OSPF
   nclu:
     commands:
+    - add ospf router-id {{ rid }}
     - add ospf network {{ item.prefix }} area {{ item.area }}
     atomic: true
     description: "Enable OSPF"

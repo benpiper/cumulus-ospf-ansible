@@ -1,7 +1,7 @@
 ---
-- name: Create loopback
+- name: Create loopbacks
   nclu:
     commands:
     - add loopback lo ip address {{ loopback }}
     atomic: true
-    description: "Create loopback"
+    description: "Create loopbacks"
