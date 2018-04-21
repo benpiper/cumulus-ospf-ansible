@@ -12,5 +12,5 @@
     - add ospf network {{ item.prefix }} area {{ item.area }}
     atomic: true
     description: "Enable OSPF"
-    loop:
-      - { prefix: 192.168.0.0/16, area: 0.0.0.0 }
+  loop:
+    - { prefix: 192.168.0.0/16, area: 0.0.0.0 }
