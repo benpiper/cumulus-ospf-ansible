@@ -3,10 +3,10 @@ spine01 rid=10.0.0.21 loopback=10.0.0.21/32
 spine02 rid=10.0.0.22 loopback=10.0.0.22/32
 
 [leafs]
-leaf01  rid=10.0.0.11 loopback=10.0.0.11/32
-leaf02  rid=10.0.0.12 loopback=10.0.0.12/32
-leaf03  rid=10.0.0.13 loopback=10.0.0.13/32
-leaf04  rid=10.0.0.14 loopback=10.0.0.14/32
+leaf01  rid=10.0.0.11 loopback=10.0.0.11/32 ifaceserver=swp1 ifaceserverip=172.16.1.254/24
+leaf02  rid=10.0.0.12 loopback=10.0.0.12/32 ifaceserver=swp2 ifaceserverip=172.16.2.254/24
+leaf03  rid=10.0.0.13 loopback=10.0.0.13/32 ifaceserver=swp1 ifaceserverip=172.16.3.254/24
+leaf04  rid=10.0.0.14 loopback=10.0.0.14/32 ifaceserver=swp2 ifaceserverip=172.16.4.254/24
 
 [switches:children]
 leafs
