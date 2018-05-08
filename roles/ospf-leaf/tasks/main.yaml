@@ -1,0 +1,11 @@
+---
+- name: Enable OSPF for leafs
+  nclu:
+    commands:
+    - add ospf router-id {{ rid }}
+    - add interface {{ item.iface }} ospf area {{ item.area }}
+    atomic: true
+    description: "Enable OSPF for leafs"
+  loop:
+    - { iface: swp51, area: 0.0.0.0 }
+    - { iface: swp52, area: 0.0.0.0 }
