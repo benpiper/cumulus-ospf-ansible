@@ -1,4 +1,11 @@
 - hosts: switches
   roles:
-  - ospf
   - loopback
+
+- hosts: leafs
+  roles:
+  - ospf-leaf
+  
+- hosts: spines
+  roles:
+  - ospf-spine
