@@ -9,5 +9,7 @@
     atomic: true
     description: "Enable OSPF for leafs"
   loop:
+    - { iface: swp49, area: 0.0.0.0 }
+    - { iface: swp50, area: 0.0.0.0 }
     - { iface: swp51, area: 0.0.0.0 }
     - { iface: swp52, area: 0.0.0.0 }
