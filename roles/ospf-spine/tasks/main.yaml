@@ -3,6 +3,7 @@
   nclu:
     commands:
     - add ospf router-id {{ rid }}
+    - add interface {{ item.iface }} ip address {{ loopback }}
     - add interface {{ item.iface }} ospf area {{ item.area }}
     atomic: true
     description: "Enable OSPF for spines"
