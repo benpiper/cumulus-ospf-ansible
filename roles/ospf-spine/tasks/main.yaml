@@ -14,3 +14,4 @@
     - { iface: swp3, area: 0.0.0.0 }
     - { iface: swp4, area: 0.0.0.0 }
     - { iface: swp31, area: 0.0.0.0 }
+    - { iface: swp32, area: 0.0.0.0 }
