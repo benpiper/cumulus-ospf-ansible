@@ -1,0 +1,14 @@
+---
+- name: Enable OSPF for spines
+  nclu:
+    commands:
+    - add ospf router-id {{ rid }}
+    - add interface {{ item.iface }} ospf area {{ item.area }}
+    atomic: true
+    description: "Enable OSPF for spines"
+  loop:
+    - { iface: swp1, area: 0.0.0.0 }
+    - { iface: swp2, area: 0.0.0.0 }
+    - { iface: swp3, area: 0.0.0.0 }
+    - { iface: swp4, area: 0.0.0.0 }
+    - { iface: swp31, area: 0.0.0.0 }
