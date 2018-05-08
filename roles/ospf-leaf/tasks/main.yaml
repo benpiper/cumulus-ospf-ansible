@@ -13,3 +13,14 @@
     - { iface: swp50, area: 0.0.0.0 }
     - { iface: swp51, area: 0.0.0.0 }
     - { iface: swp52, area: 0.0.0.0 }
+
+- name: Configure and advertise interfaces to servers
+  nclu:
+    commands:
+    - add interface {{ ifaceserver }} ip address {{ ifaceserverip }}
+    - add ospf passive-interface {{ ifaceserver }}
+    - add interface {{ ifaceserver }} ospf area {{ item.area }}
+    atomic: true
+    description: "Configure and advertise interfaces to servers"
+  loop:
+    - { area: 0.0.0.0 }
