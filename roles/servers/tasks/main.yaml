@@ -1,0 +1,7 @@
+---
+- name: Configure server interfaces
+  nclu:
+    commands:
+    - add interface {{ iface }} ip address {{ ifaceip }}
+    atomic: true
+    description: "Configure server interfaces"
