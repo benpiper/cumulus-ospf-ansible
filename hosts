@@ -13,7 +13,7 @@ leafs
 spines
 
 [servers]
-server01 iface=eth1 ifaceip=172.16.1.10/24
-server02 iface=eth1 ifaceip=172.16.2.10/24
-server03 iface=eth1 ifaceip=172.16.3.10/24
-server04 iface=eth1 ifaceip=172.16.4.10/24
+server01 iface=eth1 ifaceip=172.16.1.10/24 gwip=172.16.1.254
+server02 iface=eth1 ifaceip=172.16.2.10/24 gwip=172.16.2.254
+server03 iface=eth1 ifaceip=172.16.3.10/24 gwip=172.16.3.254
+server04 iface=eth1 ifaceip=172.16.4.10/24 gwip=172.16.4.254
