@@ -1,10 +1,7 @@
 ---
 - name: Configure server interfaces
-  nmcli:
-    type: ethernet
-    conn_name: for great justice
-    ifname: {{ iface }}
-    ip4: {{ ifaceip }}
-    gw4: {{ gwip }}
-    state: present
+  nclu:
+    commands:
+    - add interface {{ iface }} ip address {{ ifaceip }}
+    atomic: true
     description: "Configure server interfaces"
