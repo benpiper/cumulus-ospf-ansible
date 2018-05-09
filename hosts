@@ -11,3 +11,9 @@ leaf04  rid=10.0.0.14 loopback=10.0.0.14/32 ifaceserver=swp2 ifaceserverip=172.1
 [switches:children]
 leafs
 spines
+
+[servers]
+server01 iface=eth1 ifaceip=172.16.1.10/24
+server02 iface=eth1 ifaceip=172.16.2.10/24
+server03 iface=eth1 ifaceip=172.16.3.10/24
+server04 iface=eth1 ifaceip=172.16.4.10/24
