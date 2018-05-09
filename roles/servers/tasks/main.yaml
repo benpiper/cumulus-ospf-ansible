@@ -3,8 +3,8 @@
   nmcli:
     type: ethernet
     conn_name: for great justice
-    ifname: {{ iface }}
-    ip4: {{ ifaceip }}
-    gw4: {{ gwip }}
+    ifname: '{{ iface }}'
+    ip4: '{{ ifaceip }}'
+    gw4: '{{ gwip }}'
     state: present
     description: "Configure server interfaces"
