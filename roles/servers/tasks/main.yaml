@@ -7,4 +7,3 @@
     ip4: '{{ ifaceip }}'
     gw4: '{{ gwip }}'
     state: present
-    description: "Configure server interfaces"
