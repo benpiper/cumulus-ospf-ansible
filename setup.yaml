@@ -9,3 +9,7 @@
 - hosts: spines
   roles:
   - ospf-spine
+  
+- hosts: servers
+  roles:
+  - servers
